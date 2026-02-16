@@ -1,0 +1,1079 @@
+[
+    {
+        "id": 1,
+        "title": "SDE Intern",
+        "company": "Amazon",
+        "location": "Bangalore",
+        "mode": "Onsite",
+        "experience": "Fresher",
+        "skills": [
+            "Java",
+            "Data Structures",
+            "Algorithms"
+        ],
+        "source": "LinkedIn",
+        "postedDaysAgo": 1,
+        "salaryRange": "₹40k/month Internship",
+        "applyUrl": "https://amazon.jobs/en/jobs/254890",
+        "description": "Join our cloud infrastructure team as an SDE Intern. You will work on scalable backend services and participate in code reviews and design discussions."
+    },
+    {
+        "id": 2,
+        "title": "Graduate Engineer Trainee",
+        "company": "TCS",
+        "location": "Pune",
+        "mode": "Hybrid",
+        "experience": "Fresher",
+        "skills": [
+            "C++",
+            "Python",
+            "SQL"
+        ],
+        "source": "Naukri",
+        "postedDaysAgo": 3,
+        "salaryRange": "3.5–7 LPA",
+        "applyUrl": "https://www.tcs.com/careers/graduate-hiring",
+        "description": "Starting your career at TCS as a GET involves intensive training in modern tech stacks. You will be assigned to client projects based on performance."
+    },
+    {
+        "id": 3,
+        "title": "Junior Backend Developer",
+        "company": "Razorpay",
+        "location": "Bangalore",
+        "mode": "Remote",
+        "experience": "0-1",
+        "skills": [
+            "Node.js",
+            "Express",
+            "MongoDB"
+        ],
+        "source": "LinkedIn",
+        "postedDaysAgo": 0,
+        "salaryRange": "12–18 LPA",
+        "applyUrl": "https://razorpay.com/jobs/dev-112",
+        "description": "Work at the core of India's payments infrastructure. We are looking for passionate developers who love solving complex financial engineering problems."
+    },
+    {
+        "id": 4,
+        "title": "Frontend Intern",
+        "company": "Swiggy",
+        "location": "Bangalore",
+        "mode": "Onsite",
+        "experience": "Fresher",
+        "skills": [
+            "React",
+            "CSS",
+            "JavaScript"
+        ],
+        "source": "Indeed",
+        "postedDaysAgo": 2,
+        "salaryRange": "₹25k/month Internship",
+        "applyUrl": "https://swiggy.careers/jobs/intern-fe",
+        "description": "Help us build the next generation of delivery dashboards. You'll work closely with UX designers to implement polished, responsive interfaces."
+    },
+    {
+        "id": 5,
+        "title": "React Developer",
+        "company": "CRED",
+        "location": "Bangalore",
+        "mode": "Onsite",
+        "experience": "1-3",
+        "skills": [
+            "React Native",
+            "TypeScript",
+            "Redux"
+        ],
+        "source": "LinkedIn",
+        "postedDaysAgo": 5,
+        "salaryRange": "25–40 LPA",
+        "applyUrl": "https://cred.club/careers/react-22",
+        "description": "CRED is looking for high-ownership frontend engineers. You will build member-facing features that define the premium aesthetic of the CRED app."
+    },
+    {
+        "id": 6,
+        "title": "Python Developer",
+        "company": "Flipkart",
+        "location": "Bangalore",
+        "mode": "Hybrid",
+        "experience": "Fresher",
+        "skills": [
+            "Python",
+            "Django",
+            "PostgreSQL"
+        ],
+        "source": "Naukri",
+        "postedDaysAgo": 4,
+        "salaryRange": "10–15 LPA",
+        "applyUrl": "https://flipkart-careers.com/jobs/py-202",
+        "description": "Support our supply chain management systems. You'll write high-performance Python code to optimize logistics and inventory tracking."
+    },
+    {
+        "id": 7,
+        "title": "QA Intern",
+        "company": "Zoho",
+        "location": "Chennai",
+        "mode": "Onsite",
+        "experience": "Fresher",
+        "skills": [
+            "Selenium",
+            "Java",
+            "Manual Testing"
+        ],
+        "source": "LinkedIn",
+        "postedDaysAgo": 7,
+        "salaryRange": "₹15k/month Internship",
+        "applyUrl": "https://zoho.com/careers/qa-intern",
+        "description": "Ensure the quality of world-class SaaS products. You will learn automation testing and work on bug reporting across various Zoho applications."
+    },
+    {
+        "id": 8,
+        "title": "Data Analyst Intern",
+        "company": "PhonePe",
+        "location": "Bangalore",
+        "mode": "Hybrid",
+        "experience": "Fresher",
+        "skills": [
+            "SQL",
+            "Python",
+            "Tableau"
+        ],
+        "source": "LinkedIn",
+        "postedDaysAgo": 1,
+        "salaryRange": "₹30k/month Internship",
+        "applyUrl": "https://phonepe.com/careers/data-analyst",
+        "description": "Crunch data for millions of transactions. You will assist the growth team in extracting insights and building performance tracking dashboards."
+    },
+    {
+        "id": 9,
+        "title": "Java Developer",
+        "company": "Infosys",
+        "location": "Hyderabad",
+        "mode": "Hybrid",
+        "experience": "0-1",
+        "skills": [
+            "Java",
+            "Spring Boot",
+            "Microservices"
+        ],
+        "source": "Naukri",
+        "postedDaysAgo": 8,
+        "salaryRange": "4–8 LPA",
+        "applyUrl": "https://infosys.com/careers/java-01",
+        "description": "Join our digital transformation unit. You'll develop enterprise-grade Java applications for global banking clients using modern microservices architecture."
+    },
+    {
+        "id": 10,
+        "title": "SDE-1",
+        "company": "Freshworks",
+        "location": "Chennai",
+        "mode": "Remote",
+        "experience": "1-3",
+        "skills": [
+            "Ruby on Rails",
+            "JavaScript",
+            "AWS"
+        ],
+        "source": "LinkedIn",
+        "postedDaysAgo": 2,
+        "salaryRange": "15–25 LPA",
+        "applyUrl": "https://freshworks.com/careers/sde1",
+        "description": "Build software that delights customers. You will contribute to our core CRM platform, focusing on scalability and user-centric features."
+    },
+    {
+        "id": 11,
+        "title": "Full Stack Developer",
+        "company": "Juspay",
+        "location": "Bangalore",
+        "mode": "Onsite",
+        "experience": "0-1",
+        "skills": [
+            "Haskell",
+            "PureScript",
+            "React"
+        ],
+        "source": "LinkedIn",
+        "postedDaysAgo": 0,
+        "salaryRange": "20–30 LPA",
+        "applyUrl": "https://juspay.in/careers/fs-dev",
+        "description": "Architect the future of payments. We use functional programming extensively to build reliable, high-throughput payment processing systems."
+    },
+    {
+        "id": 12,
+        "title": "Mobile Engineer (Android)",
+        "company": "Paytm",
+        "location": "Noida",
+        "mode": "Onsite",
+        "experience": "1-3",
+        "skills": [
+            "Kotlin",
+            "Android SDK",
+            "MVVM"
+        ],
+        "source": "LinkedIn",
+        "postedDaysAgo": 6,
+        "salaryRange": "18–28 LPA",
+        "applyUrl": "https://paytm.com/careers/android-dev",
+        "description": "Enhance the Paytm Super App experience. You'll build new modules for financial services, ensuring high performance across a wide range of devices."
+    },
+    {
+        "id": 13,
+        "title": "Software Engineer Intern",
+        "company": "IBM",
+        "location": "Kochi",
+        "mode": "Hybrid",
+        "experience": "Fresher",
+        "skills": [
+            "Java",
+            "Cloud Computing",
+            "Linux"
+        ],
+        "source": "Indeed",
+        "postedDaysAgo": 9,
+        "salaryRange": "₹28k/month Internship",
+        "applyUrl": "https://ibm.com/careers/intern-2024",
+        "description": "Gain hands-on experience with IBM's cloud technologies. You will support the development team in building enterprise solutions for AI and hybrid cloud."
+    },
+    {
+        "id": 14,
+        "title": "DotNet Developer",
+        "company": "Accenture",
+        "location": "Bangalore",
+        "mode": "Hybrid",
+        "experience": "1-3",
+        "skills": [
+            ".NET Core",
+            "C#",
+            "Azure"
+        ],
+        "source": "Naukri",
+        "postedDaysAgo": 5,
+        "salaryRange": "8–14 LPA",
+        "applyUrl": "https://accenture.com/careers/dotnet-dev",
+        "description": "Work on cutting-edge cloud transformations. You will design and develop secure web applications using the latest .NET framework and Azure services."
+    },
+    {
+        "id": 15,
+        "title": "React Native Intern",
+        "company": "Zomato",
+        "location": "Gurgaon",
+        "mode": "Onsite",
+        "experience": "Fresher",
+        "skills": [
+            "React Native",
+            "JavaScript",
+            "Firebase"
+        ],
+        "source": "LinkedIn",
+        "postedDaysAgo": 2,
+        "salaryRange": "₹35k/month Internship",
+        "applyUrl": "https://zomato.com/careers/intern-rn",
+        "description": "Collaborate with our mobile team to build and test new features for the Zomato app. You'll learn app debugging and state management at scale."
+    },
+    {
+        "id": 16,
+        "title": "Backend Engineer",
+        "company": "CureFit",
+        "location": "Bangalore",
+        "mode": "Hybrid",
+        "experience": "1-3",
+        "skills": [
+            "Node.js",
+            "Redis",
+            "Kafka"
+        ],
+        "source": "LinkedIn",
+        "postedDaysAgo": 3,
+        "salaryRange": "18–30 LPA",
+        "applyUrl": "https://cure.fit/careers/backend",
+        "description": "Help us scale our health-tech platform. You will build high-concurrency systems to handle millions of live workout sessions and class bookings."
+    },
+    {
+        "id": 17,
+        "title": "DevOps Intern",
+        "company": "Groww",
+        "location": "Bangalore",
+        "mode": "Hybrid",
+        "experience": "Fresher",
+        "skills": [
+            "Docker",
+            "Kubernetes",
+            "AWS"
+        ],
+        "source": "LinkedIn",
+        "postedDaysAgo": 1,
+        "salaryRange": "₹30k/month Internship",
+        "applyUrl": "https://groww.in/careers/devops-intern",
+        "description": "Learn the ropes of cloud infrastructure. You will help maintain our CI/CD pipelines and monitor the health of our production Kubernetes clusters."
+    },
+    {
+        "id": 18,
+        "title": "Java Developer",
+        "company": "Oracle",
+        "location": "Bangalore",
+        "mode": "Onsite",
+        "experience": "0-1",
+        "skills": [
+            "Java",
+            "Oracle DB",
+            "PL/SQL"
+        ],
+        "source": "LinkedIn",
+        "postedDaysAgo": 4,
+        "salaryRange": "12–20 LPA",
+        "applyUrl": "https://oracle.com/careers/java-dev",
+        "description": "Contribute to the development of Oracle's primary cloud applications. You'll focus on high-performance database interactions and API development."
+    },
+    {
+        "id": 19,
+        "title": "Graduate Trainee",
+        "company": "Sapient",
+        "location": "Gurgaon",
+        "mode": "Hybrid",
+        "experience": "Fresher",
+        "skills": [
+            "HTML",
+            "CSS",
+            "JS"
+        ],
+        "source": "Indeed",
+        "postedDaysAgo": 10,
+        "salaryRange": "6–9 LPA",
+        "applyUrl": "https://publicissapient.com/careers",
+        "description": "Explore multiple technology domains during our immersive trainee program. You will be mentored by senior leads and work on digital transformation projects."
+    },
+    {
+        "id": 20,
+        "title": "Node.js Developer",
+        "company": "Urban Company",
+        "location": "Gurgaon",
+        "mode": "Remote",
+        "experience": "1-3",
+        "skills": [
+            "Node.js",
+            "MySQL",
+            "AWS Lambda"
+        ],
+        "source": "LinkedIn",
+        "postedDaysAgo": 2,
+        "salaryRange": "15–28 LPA",
+        "applyUrl": "https://urbancompany.com/careers/node",
+        "description": "Build the backend for India's largest home services marketplace. You will optimize booking algorithms and scale our serverless infrastructure."
+    },
+    {
+        "id": 21,
+        "title": "Machine Learning Intern",
+        "company": "Ola Electric",
+        "location": "Bangalore",
+        "mode": "Onsite",
+        "experience": "Fresher",
+        "skills": [
+            "Python",
+            "TensorFlow",
+            "OpenCV"
+        ],
+        "source": "LinkedIn",
+        "postedDaysAgo": 2,
+        "salaryRange": "₹30k/month Internship",
+        "applyUrl": "https://olaelectric.com/careers/ml-intern",
+        "description": "Work on computer vision algorithms for electric vehicles. You will help process camera data to improve obstacle detection and navigation systems."
+    },
+    {
+        "id": 22,
+        "title": "Frontend Engineer",
+        "company": "PagarBook",
+        "location": "Bangalore",
+        "mode": "Remote",
+        "experience": "1-3",
+        "skills": [
+            "React",
+            "TypeScript",
+            "SCSS"
+        ],
+        "source": "LinkedIn",
+        "postedDaysAgo": 5,
+        "salaryRange": "12–22 LPA",
+        "applyUrl": "https://pagarbook.com/careers/fe",
+        "description": "Build intuitive business tools for millions of SMEs in India. You will be responsible for building complex web applications with high performance."
+    },
+    {
+        "id": 23,
+        "title": "Systems Engineer",
+        "company": "Wipro",
+        "location": "Bhubaneswar",
+        "mode": "Onsite",
+        "experience": "Fresher",
+        "skills": [
+            "C#",
+            "SQL Server",
+            "ASP.NET"
+        ],
+        "source": "Naukri",
+        "postedDaysAgo": 6,
+        "salaryRange": "4–6.5 LPA",
+        "applyUrl": "https://wipro.com/careers/systems-eng",
+        "description": "Kickstart your career with Wipro's Global Infrastructure Services. You will manage and support IT infrastructure for international clients."
+    },
+    {
+        "id": 24,
+        "title": "Data Engineer",
+        "company": "Inmobi",
+        "location": "Bangalore",
+        "mode": "Hybrid",
+        "experience": "1-3",
+        "skills": [
+            "Spark",
+            "Hadoop",
+            "Python"
+        ],
+        "source": "LinkedIn",
+        "postedDaysAgo": 3,
+        "salaryRange": "20–35 LPA",
+        "applyUrl": "https://inmobi.com/careers/data-eng",
+        "description": "Power the world's most intelligent ad-tech platform. You will build highly scalable data pipelines to process terabytes of data in real-time."
+    },
+    {
+        "id": 25,
+        "title": "Full Stack Intern",
+        "company": "Smallcase",
+        "location": "Bangalore",
+        "mode": "Hybrid",
+        "experience": "Fresher",
+        "skills": [
+            "Node.js",
+            "React",
+            "AWS"
+        ],
+        "source": "LinkedIn",
+        "postedDaysAgo": 1,
+        "salaryRange": "₹28k/month Internship",
+        "applyUrl": "https://smallcase.com/careers/fs-intern",
+        "description": "Work with our product team to build investment products. You will contribute to both the backend APIs and frontend user experiences."
+    },
+    {
+        "id": 26,
+        "title": "Associate Engineer",
+        "company": "Cognizant",
+        "location": "Coimbatore",
+        "mode": "Onsite",
+        "experience": "Fresher",
+        "skills": [
+            "Java",
+            "Mainframe",
+            "SQL"
+        ],
+        "source": "Naukri",
+        "postedDaysAgo": 9,
+        "salaryRange": "4.5–7 LPA",
+        "applyUrl": "https://cognizant.com/careers/assoc-eng",
+        "description": "Join Cognizant's world-class engineering team. You will undergo training in legacy and modern systems before being deployed on client projects."
+    },
+    {
+        "id": 27,
+        "title": "UI Designer",
+        "company": "Unacademy",
+        "location": "Bangalore",
+        "mode": "Hybrid",
+        "experience": "1-3",
+        "skills": [
+            "Figma",
+            "Design Systems",
+            "Prototyping"
+        ],
+        "source": "LinkedIn",
+        "postedDaysAgo": 4,
+        "salaryRange": "15–25 LPA",
+        "applyUrl": "https://unacademy.com/careers/ui-designer",
+        "description": "Design educational experiences for millions of students. You'll build consistent design languages across our web and mobile platforms."
+    },
+    {
+        "id": 28,
+        "title": "Operations Analyst",
+        "company": "Amazon",
+        "location": "Bangalore",
+        "mode": "Onsite",
+        "experience": "0-1",
+        "skills": [
+            "Excel",
+            "SQL",
+            "Communication"
+        ],
+        "source": "LinkedIn",
+        "postedDaysAgo": 2,
+        "salaryRange": "5–9 LPA",
+        "applyUrl": "https://amazon.jobs/en/jobs/analyst-12",
+        "description": "Support Amazon's fulfillment network by analyzing logistics data. You will identify bottlenecks and suggest process improvements to increase efficiency."
+    },
+    {
+        "id": 29,
+        "title": "Blockchain Developer",
+        "company": "Polygon",
+        "location": "Remote",
+        "experience": "1-3",
+        "skills": [
+            "Solidity",
+            "Rust",
+            "Ethereum"
+        ],
+        "source": "LinkedIn",
+        "postedDaysAgo": 5,
+        "salaryRange": "30–60 LPA",
+        "applyUrl": "https://polygon.technology/careers/dev",
+        "description": "Build the infra for the decentralized web. You will work on Polygon's scaling solutions, optimizing smart contracts and consensus protocols."
+    },
+    {
+        "id": 30,
+        "title": "Security Intern",
+        "company": "HackerRank",
+        "location": "Bangalore",
+        "mode": "Hybrid",
+        "experience": "Fresher",
+        "skills": [
+            "Ethical Hacking",
+            "Python",
+            "Networking"
+        ],
+        "source": "LinkedIn",
+        "postedDaysAgo": 8,
+        "salaryRange": "₹40k/month Internship",
+        "applyUrl": "https://hackerrank.com/careers/sec-intern",
+        "description": "Help us keep our platform secure. You will assist in vulnerability assessments, penetration testing, and security auditing of our infrastructure."
+    },
+    {
+        "id": 31,
+        "title": "Customer Success",
+        "company": "Postman",
+        "location": "Bangalore",
+        "mode": "Hybrid",
+        "experience": "1-3",
+        "skills": [
+            "APIs",
+            "Communication",
+            "Technical Writing"
+        ],
+        "source": "LinkedIn",
+        "postedDaysAgo": 2,
+        "salaryRange": "12–20 LPA",
+        "applyUrl": "https://postman.com/careers/cs",
+        "description": "Help developers succeed with Postman. You will provide technical guidance, troubleshoot API issues, and advocate for user needs within the company."
+    },
+    {
+        "id": 32,
+        "title": "Marketing Intern",
+        "company": "Lenskart",
+        "location": "Delhi",
+        "mode": "Onsite",
+        "experience": "Fresher",
+        "skills": [
+            "SEO",
+            "Content Writing",
+            "Social Media"
+        ],
+        "source": "LinkedIn",
+        "postedDaysAgo": 1,
+        "salaryRange": "₹15k/month Internship",
+        "applyUrl": "https://lenskart.com/careers/marketing",
+        "description": "Learn the art of retail marketing. You will assist the digital marketing team in campaign planning, content creation, and performance tracking."
+    },
+    {
+        "id": 33,
+        "title": "Cloud Engineer",
+        "company": "Capgemini",
+        "location": "Mumbai",
+        "mode": "Hybrid",
+        "experience": "0-1",
+        "skills": [
+            "AWS",
+            "Azure",
+            "Terraform"
+        ],
+        "source": "Naukri",
+        "postedDaysAgo": 6,
+        "salaryRange": "6–10 LPA",
+        "applyUrl": "https://capgemini.com/careers/cloud",
+        "description": "Assist our clients in moving to the cloud. You will build and manage automated infrastructure on major cloud providers using Infrastructure as Code."
+    },
+    {
+        "id": 34,
+        "title": "Business Analyst",
+        "company": "Dell",
+        "location": "Bangalore",
+        "mode": "Onsite",
+        "experience": "0-1",
+        "skills": [
+            "PowerBI",
+            "SQL",
+            "Statistics"
+        ],
+        "source": "Indeed",
+        "postedDaysAgo": 4,
+        "salaryRange": "8–12 LPA",
+        "applyUrl": "https://dell.com/careers/ba-12",
+        "description": "Drive business decisions with data. You will work on supply chain analytics, identifying trends and reporting on key performance indicators."
+    },
+    {
+        "id": 35,
+        "title": "Research Intern",
+        "company": "Microsoft Research",
+        "location": "Bangalore",
+        "mode": "Onsite",
+        "experience": "Fresher",
+        "skills": [
+            "Python",
+            "Algorithms",
+            "Math"
+        ],
+        "source": "LinkedIn",
+        "postedDaysAgo": 3,
+        "salaryRange": "₹45k/month Internship",
+        "applyUrl": "https://microsoft.com/careers/research-intern",
+        "description": "Work with world-class researchers on fundamental computer science problems. You will contribute to ongoing research projects in AI, Systems, and more."
+    },
+    {
+        "id": 36,
+        "title": "Backend Dev",
+        "company": "ClearTax",
+        "location": "Bangalore",
+        "mode": "Remote",
+        "experience": "1-3",
+        "skills": [
+            "Java",
+            "Spring",
+            "Kafka"
+        ],
+        "source": "LinkedIn",
+        "postedDaysAgo": 1,
+        "salaryRange": "15–25 LPA",
+        "applyUrl": "https://cleartax.in/careers/backend",
+        "description": "Build high-integrity systems for taxation and finance. You will work on scaling our core engines to process millions of tax returns during peak periods."
+    },
+    {
+        "id": 37,
+        "title": "Game Developer",
+        "company": "Dream11",
+        "location": "Mumbai",
+        "mode": "Onsite",
+        "experience": "1-3",
+        "skills": [
+            "Unity",
+            "C#",
+            "Socket.io"
+        ],
+        "source": "LinkedIn",
+        "postedDaysAgo": 4,
+        "salaryRange": "20–35 LPA",
+        "applyUrl": "https://dream11.com/careers/game-dev",
+        "description": "Develop high-engagement sports games. You will focus on real-time multiplayer features and optimizing performance for millions of concurrent users."
+    },
+    {
+        "id": 38,
+        "title": "iOS Intern",
+        "company": "Ola Cabs",
+        "location": "Bangalore",
+        "mode": "Onsite",
+        "experience": "Fresher",
+        "skills": [
+            "Swift",
+            "iOS SDK",
+            "Git"
+        ],
+        "source": "LinkedIn",
+        "postedDaysAgo": 9,
+        "salaryRange": "₹30k/month Internship",
+        "applyUrl": "https://ola.com/careers/ios-intern",
+        "description": "Join the Ola app team and learn to build robust mobile features. You will work on improving the passenger experience through polished iOS apps."
+    },
+    {
+        "id": 39,
+        "title": "Content Strategist",
+        "company": "Byju's",
+        "location": "Bangalore",
+        "mode": "Hybrid",
+        "experience": "Fresher",
+        "skills": [
+            "English",
+            "Education",
+            "Scripting"
+        ],
+        "source": "Indeed",
+        "postedDaysAgo": 5,
+        "salaryRange": "4–7 LPA",
+        "applyUrl": "https://byjus.com/careers",
+        "description": "Create engaging educational content for K-12 students. You will brainstorm and write scripts for educational videos, ensuring clarity and impact."
+    },
+    {
+        "id": 40,
+        "title": "Reliability Engineer",
+        "company": "Adobe",
+        "location": "Noida",
+        "mode": "Hybrid",
+        "experience": "1-3",
+        "skills": [
+            "Python",
+            "Go",
+            "Observability"
+        ],
+        "source": "LinkedIn",
+        "postedDaysAgo": 2,
+        "salaryRange": "22–35 LPA",
+        "applyUrl": "https://adobe.com/careers/sre",
+        "description": "Maintain the uptime of Adobe's flagship creative cloud services. You will build tools for automation, monitoring, and incident response."
+    },
+    {
+        "id": 41,
+        "title": "Product Analyst",
+        "company": "Meesho",
+        "location": "Bangalore",
+        "mode": "Hybrid",
+        "experience": "0-1",
+        "skills": [
+            "SQL",
+            "Analytics",
+            "Communication"
+        ],
+        "source": "LinkedIn",
+        "postedDaysAgo": 3,
+        "salaryRange": "12–18 LPA",
+        "applyUrl": "https://meesho.com/careers/pa",
+        "description": "Identify product growth opportunities at Meesho. You will analyze user behavior data and help product managers prioritize new feature development."
+    },
+    {
+        "id": 42,
+        "title": "Web Dev Intern",
+        "company": "Boat",
+        "location": "Mumbai",
+        "mode": "Onsite",
+        "experience": "Fresher",
+        "skills": [
+            "Shopify",
+            "Liquid",
+            "JS"
+        ],
+        "source": "LinkedIn",
+        "postedDaysAgo": 1,
+        "salaryRange": "₹20k/month Internship",
+        "applyUrl": "https://boat-lifestyle.com/careers",
+        "description": "Help manage India's top D2C website. You will assist in building custom landing pages and optimizing the checkout flow for better conversions."
+    },
+    {
+        "id": 43,
+        "title": "Support Engineer",
+        "company": "SAP",
+        "location": "Bangalore",
+        "mode": "Onsite",
+        "experience": "Fresher",
+        "skills": [
+            "Enterprise Software",
+            "DBs",
+            "Troubleshooting"
+        ],
+        "source": "Indeed",
+        "postedDaysAgo": 7,
+        "salaryRange": "7–11 LPA",
+        "applyUrl": "https://sap.com/careers/support",
+        "description": "Provide mission-critical support for SAP's global customers. You will diagnose complex technical issues and provide solutions for ERP systems."
+    },
+    {
+        "id": 44,
+        "title": "Embedded Intern",
+        "company": "Ather Energy",
+        "location": "Bangalore",
+        "mode": "Onsite",
+        "experience": "Fresher",
+        "skills": [
+            "C",
+            "RTOS",
+            "Microcontrollers"
+        ],
+        "source": "LinkedIn",
+        "postedDaysAgo": 4,
+        "salaryRange": "₹30k/month Internship",
+        "applyUrl": "https://atherenergy.com/careers/embedded",
+        "description": "Work on the brains of the Ather 450X. You will help develop and test embedded firmware for battery management and dashboard displays."
+    },
+    {
+        "id": 45,
+        "title": "Frontend Lead",
+        "company": "Zepto",
+        "location": "Mumbai",
+        "mode": "Hybrid",
+        "experience": "3-5",
+        "skills": [
+            "React",
+            "Performance",
+            "Mentorship"
+        ],
+        "source": "LinkedIn",
+        "postedDaysAgo": 1,
+        "salaryRange": "40–60 LPA",
+        "applyUrl": "https://zepto.com/careers/fe-lead",
+        "description": "Lead the frontend team at India's fastest-growing grocery app. You'll architect high-performance web systems and drive engineering excellence."
+    },
+    {
+        "id": 46,
+        "title": "Data Science Intern",
+        "company": "Myntra",
+        "location": "Bangalore",
+        "mode": "Onsite",
+        "experience": "Fresher",
+        "skills": [
+            "Python",
+            "Pandas",
+            "Statistics"
+        ],
+        "source": "LinkedIn",
+        "postedDaysAgo": 6,
+        "salaryRange": "₹30k/month Internship",
+        "applyUrl": "https://myntra.com/careers/data-sci",
+        "description": "Build recommendation engines for fashion ecommerce. You'll assist in developing models to personalize the user's shopping journey."
+    },
+    {
+        "id": 47,
+        "title": "Software Intern",
+        "company": "Salesforce",
+        "location": "Hyderabad",
+        "mode": "Hybrid",
+        "experience": "Fresher",
+        "skills": [
+            "Apex",
+            "LWC",
+            "Java"
+        ],
+        "source": "LinkedIn",
+        "postedDaysAgo": 8,
+        "salaryRange": "₹42k/month Internship",
+        "applyUrl": "https://salesforce.com/careers/intern",
+        "description": "Learn to build on the world's #1 CRM platform. You will gain experience in cloud development and work with cross-functional global teams."
+    },
+    {
+        "id": 48,
+        "title": "Golang Developer",
+        "company": "Hotstar",
+        "location": "Mumbai",
+        "mode": "Hybrid",
+        "experience": "1-3",
+        "skills": [
+            "Go",
+            "Redis",
+            "Elasticsearch"
+        ],
+        "source": "LinkedIn",
+        "postedDaysAgo": 3,
+        "salaryRange": "22–38 LPA",
+        "applyUrl": "https://hotstar.com/careers/go-dev",
+        "description": "Scale our media delivery systems. You will build high-performance backend services to handle millions of concurrent viewers during live cricket."
+    },
+    {
+        "id": 49,
+        "title": "Community Manager",
+        "company": "Kuna",
+        "location": "Remote",
+        "experience": "Fresher",
+        "skills": [
+            "Social Media",
+            "Writing",
+            "Discord"
+        ],
+        "source": "LinkedIn",
+        "postedDaysAgo": 2,
+        "salaryRange": "5–8 LPA",
+        "applyUrl": "https://kuna.io/jobs",
+        "description": "Build and engage our community of crypto enthusiasts. You will manage our social presence and moderate discussions on Discord and Telegram."
+    },
+    {
+        "id": 50,
+        "title": "Android Developer",
+        "company": "ShareChat",
+        "location": "Bangalore",
+        "mode": "Hybrid",
+        "experience": "1-3",
+        "skills": [
+            "Kotlin",
+            "Dagger",
+            "Coroutines"
+        ],
+        "source": "LinkedIn",
+        "postedDaysAgo": 5,
+        "salaryRange": "20–32 LPA",
+        "applyUrl": "https://sharechat.com/careers/android",
+        "description": "Optimize our short-video experience for Indian users. You'll focus on reducing app size and improving video playback on low-end devices."
+    },
+    {
+        "id": 51,
+        "title": "Recruiter Intern",
+        "company": "Accenture",
+        "location": "Bangalore",
+        "mode": "Onsite",
+        "experience": "Fresher",
+        "skills": [
+            "Hiring",
+            "Sourcing",
+            "Communication"
+        ],
+        "source": "Indeed",
+        "postedDaysAgo": 4,
+        "salaryRange": "₹18k/month Internship",
+        "applyUrl": "https://accenture.com/careers/hr-intern",
+        "description": "Support our high-volume recruitment engine. You will source candidates, coordinate interview schedules, and maintain the applicant pool."
+    },
+    {
+        "id": 52,
+        "title": "Site Reliability Tech",
+        "company": "Cognizant",
+        "location": "Kolkata",
+        "mode": "Onsite",
+        "experience": "0-1",
+        "skills": [
+            "Bash",
+            "Linux",
+            "Monitoring"
+        ],
+        "source": "Naukri",
+        "postedDaysAgo": 10,
+        "salaryRange": "5–8.5 LPA",
+        "applyUrl": "https://cognizant.com/careers/sre-tech",
+        "description": "Maintain the stability of client workloads. You'll perform regular health checks and resolve basic infrastructure issues for enterprise apps."
+    },
+    {
+        "id": 53,
+        "title": "Product Designer",
+        "company": "Dunzo",
+        "location": "Bangalore",
+        "mode": "Hybrid",
+        "experience": "1-3",
+        "skills": [
+            "UX Research",
+            "UI",
+            "Animation"
+        ],
+        "source": "LinkedIn",
+        "postedDaysAgo": 2,
+        "salaryRange": "18–28 LPA",
+        "applyUrl": "https://dunzo.in/careers/designer",
+        "description": "Create delightful delivery experiences. You will design user flows and interfaces that make grocery ordering fast and friction-free."
+    },
+    {
+        "id": 54,
+        "title": "Cloud Architect",
+        "company": "Wipro",
+        "location": "Bangalore",
+        "mode": "Hybrid",
+        "experience": "3-5",
+        "skills": [
+            "AWS",
+            "Azure",
+            "Security"
+        ],
+        "source": "Naukri",
+        "postedDaysAgo": 7,
+        "salaryRange": "25–45 LPA",
+        "applyUrl": "https://wipro.com/careers/cloud-arch",
+        "description": "Design secure and scalable cloud environments for our global clients. You will lead cloud strategy and migration planning for complex workloads."
+    },
+    {
+        "id": 55,
+        "title": "Java Programmer",
+        "company": "TCS",
+        "location": "Ahmedabad",
+        "mode": "Hybrid",
+        "experience": "Fresher",
+        "skills": [
+            "Java",
+            "SQL",
+            "Spring"
+        ],
+        "source": "Naukri",
+        "postedDaysAgo": 9,
+        "salaryRange": "3.3–6.5 LPA",
+        "applyUrl": "https://tcs.com/careers/dev",
+        "description": "Apply your programming knowledge to various industry segments. You'll work on development, testing, and support for enterprise Java apps."
+    },
+    {
+        "id": 56,
+        "title": "Finance Analyst",
+        "company": "Goldman Sachs",
+        "location": "Bangalore",
+        "mode": "Onsite",
+        "experience": "0-1",
+        "skills": [
+            "Finance",
+            "Accounting",
+            "MS Excel"
+        ],
+        "source": "LinkedIn",
+        "postedDaysAgo": 3,
+        "salaryRange": "15–25 LPA",
+        "applyUrl": "https://goldman.com/careers",
+        "description": "Support our global investment research division. You will perform financial modeling and analysis for various asset classes and markets."
+    },
+    {
+        "id": 57,
+        "title": "Backend Intern",
+        "company": "Licious",
+        "location": "Bangalore",
+        "mode": "Onsite",
+        "experience": "Fresher",
+        "skills": [
+            "Python",
+            "Flask",
+            "Redis"
+        ],
+        "source": "LinkedIn",
+        "postedDaysAgo": 1,
+        "salaryRange": "₹25k/month Internship",
+        "applyUrl": "https://licious.in/careers/backend",
+        "description": "Work on the backend of our food-tech platform. You will help build and maintain APIs that power our ordering and delivery systems."
+    },
+    {
+        "id": 58,
+        "title": "Sales Development",
+        "company": "LambdaTest",
+        "location": "Remote",
+        "experience": "0-1",
+        "skills": [
+            "Sales",
+            "Communication",
+            "CRM"
+        ],
+        "source": "LinkedIn",
+        "postedDaysAgo": 2,
+        "salaryRange": "6–10 LPA",
+        "applyUrl": "https://lambdatest.com/careers/sdr",
+        "description": "Drive top-of-funnel growth for our testing platform. You will proactively reach out to potential customers and qualify leads for the sales team."
+    },
+    {
+        "id": 59,
+        "title": "SDE Intern",
+        "company": "Vimeo",
+        "location": "Bangalore",
+        "mode": "Hybrid",
+        "experience": "Fresher",
+        "skills": [
+            "React/Vue",
+            "PHP",
+            "Go"
+        ],
+        "source": "LinkedIn",
+        "postedDaysAgo": 4,
+        "salaryRange": "₹40k/month Internship",
+        "applyUrl": "https://vimeo.com/careers/intern",
+        "description": "Work on high-performance video delivery components. You'll assist in building features for our creator tools and playback interfaces."
+    },
+    {
+        "id": 60,
+        "title": "Junior QA Eng",
+        "company": "BrowserStack",
+        "location": "Mumbai",
+        "mode": "Hybrid",
+        "experience": "0-1",
+        "skills": [
+            "Manual Testing",
+            "Test Cases",
+            "QA"
+        ],
+        "source": "LinkedIn",
+        "postedDaysAgo": 5,
+        "salaryRange": "8–13 LPA",
+        "applyUrl": "https://browserstack.com/careers/jr-qa",
+        "description": "Ensure the highest quality for our cloud testing platform. You will write and execute manual test cases across multiple devices and browsers."
+    }
+]
