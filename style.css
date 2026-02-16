@@ -711,6 +711,87 @@ input[type="range"] {
     margin-bottom: var(--space-4);
 }
 
+/* TOAST */
+.toast {
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+    background-color: var(--text-primary);
+    color: var(--white);
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-size: 14px;
+    z-index: 3000;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+    transform: translateY(100px);
+    transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.toast.show {
+    transform: translateY(0);
+}
+
+/* STATUS BADGES */
+.status-badge {
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-size: 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.status-applied {
+    background-color: #E3F2FD;
+    color: #1976D2;
+}
+
+.status-rejected {
+    background-color: #FFEBEE;
+    color: #D32F2F;
+}
+
+.status-selected {
+    background-color: #E8F5E9;
+    color: #2E7D32;
+}
+
+.status-not-applied {
+    background-color: #F5F5F5;
+    color: #757575;
+}
+
+/* STATUS SELECT */
+.status-select {
+    font-size: 11px;
+    padding: 4px 8px;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    background: var(--white);
+    cursor: pointer;
+}
+
+/* UPDATES LIST */
+.updates-section {
+    margin-top: var(--space-4);
+    background: var(--white);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    padding: var(--space-3);
+    text-align: left;
+}
+
+.update-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 0;
+    border-bottom: 1px solid var(--bg-color);
+    font-size: 13px;
+}
+
+.update-item:last-child {
+    border-bottom: none;
+}
+
 .centered {
     margin: 0 auto;
 }
