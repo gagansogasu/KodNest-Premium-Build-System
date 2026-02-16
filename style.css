@@ -865,6 +865,85 @@ input[type="range"] {
     opacity: 0.3;
 }
 
+/* PROOF & SUBMISSION UI */
+.proof-card {
+    background: var(--white);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    padding: var(--space-4);
+}
+
+.step-list {
+    margin: var(--space-3) 0;
+}
+
+.step-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 16px;
+    background: var(--bg-color);
+    border-radius: 8px;
+    margin-bottom: 8px;
+    font-size: 14px;
+}
+
+.step-status {
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.step-status.completed {
+    color: var(--success-color);
+}
+
+.step-status.pending {
+    color: var(--text-secondary);
+    opacity: 0.5;
+}
+
+.artifact-grid {
+    display: grid;
+    gap: var(--space-3);
+    margin-top: var(--space-3);
+}
+
+.project-status-badge {
+    display: inline-block;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+    margin-bottom: var(--space-2);
+}
+
+.status-not-started {
+    background: #F5F5F5;
+    color: #757575;
+}
+
+.status-in-progress {
+    background: #FFF9C4;
+    color: #FBC02D;
+}
+
+.status-shipped {
+    background: #E8F5E9;
+    color: #2E7D32;
+}
+
+.completion-banner {
+    background: var(--success-color);
+    color: white;
+    padding: 12px;
+    border-radius: 8px;
+    text-align: center;
+    margin-top: var(--space-4);
+    font-size: 14px;
+    font-weight: 500;
+}
+
 .centered {
     margin: 0 auto;
 }

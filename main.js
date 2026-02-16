@@ -10,6 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let jobStatuses = JSON.parse(localStorage.getItem('jobTrackerStatus') || '{}');
     let statusUpdates = JSON.parse(localStorage.getItem('jobTrackerUpdates') || '[]');
     let testChecklist = JSON.parse(localStorage.getItem('jobTrackerTestChecklist') || '{}');
+    let artifacts = JSON.parse(localStorage.getItem('jobTrackerArtifacts') || '{"lovable":"", "github":"", "deployed":""}');
     let showOnlyMatches = false;
 
     async function fetchJobs() {
@@ -693,22 +694,18 @@ document.addEventListener('DOMContentLoaded', () => {
                     </div>
                 `;
             }
-        } else if (hash === '#proof') {
+        } else if (hash === '#jt/proof' || hash === '#proof') {
             contextHeader.innerHTML = `
                 <h1 id="page-title">Submission Proof</h1>
-                <p class="subtext">Collect and verify your application artifacts for systematic tracking.</p>
+                <p class="subtext">Verify and collect your build artifacts for final certification.</p>
             `;
-            mainContent.innerHTML = `
-                <div class="workspace-wrapper">
-                    <section class="primary-workspace full-width">
-                        <div class="card">
-                            <h3>Artifact Collection</h3>
-                            <p class="muted">Placeholder for artifact collection and verification interface.</p>
-                            <button class="btn btn-secondary" style="border-style: dashed;">Upload Proof</button>
-                        </div>
-                    </section>
-                </div>
+            renderProof();
+        } else if (hash === '#jt/07-test') {
+            contextHeader.innerHTML = `
+                <h1 id="page-title">Quality Assurance</h1>
+                <p class="subtext">Verify system integrity before final deployment.</p>
             `;
+            renderTestChecklist();
         }
 
         // Update Active Nav State
@@ -766,6 +763,112 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     });
+    function renderProof() {
+        const mainContent = document.getElementById('main-content');
+        if (!mainContent) return;
+
+        const passedCount = Object.values(testChecklist).filter(v => v === true).length;
+        const linksProvided = artifacts.lovable && artifacts.github && artifacts.deployed;
+        const isShipped = passedCount === 10 && linksProvided;
+
+        let statusText = 'Not Started';
+        let statusClass = 'status-not-started';
+        if (isShipped) {
+            statusText = 'Shipped';
+            statusClass = 'status-shipped';
+        } else if (passedCount > 0 || artifacts.lovable || artifacts.github || artifacts.deployed) {
+            statusText = 'In Progress';
+            statusClass = 'status-in-progress';
+        }
+
+        const steps = [
+            { name: 'Environment Setup', status: 'Completed' },
+            { name: 'UI Foundations', status: 'Completed' },
+            { name: 'Data Integration', status: 'Completed' },
+            { name: 'Intelligent Matching', status: 'Completed' },
+            { name: 'Daily Digest', status: 'Completed' },
+            { name: 'Status Tracking', status: 'Completed' },
+            { name: 'System Testing', status: passedCount === 10 ? 'Completed' : 'Pending' },
+            { name: 'Artifact Collection', status: linksProvided ? 'Completed' : 'Pending' }
+        ];
+
+        mainContent.innerHTML = `
+            <div style="padding: 0 var(--space-3) var(--space-5);">
+                <div class="workspace-wrapper">
+                    <section class="primary-workspace" style="flex: 1;">
+                        <div class="proof-card">
+                            <div class="project-status-badge ${statusClass}">${statusText}</div>
+                            <h3>Project 1 — Job Notification Tracker</h3>
+                            
+                            <div class="step-list">
+                                <h4 style="margin-bottom: 12px;">Step Completion Summary</h4>
+                                ${steps.map(s => `
+                                    <div class="step-item">
+                                        <span>${s.name}</span>
+                                        <span class="step-status ${s.status.toLowerCase()}">${s.status}</span>
+                                    </div>
+                                `).join('')}
+                            </div>
+
+                            <div class="artifact-grid">
+                                <h4 style="margin-bottom: 4px;">Artifact Collection</h4>
+                                <div class="input-group">
+                                    <label class="label">Lovable Project Link</label>
+                                    <input type="url" id="art-lovable" class="filter-input full-width" value="${artifacts.lovable}" placeholder="https://lovable.dev/projects/...">
+                                </div>
+                                <div class="input-group">
+                                    <label class="label">GitHub Repository Link</label>
+                                    <input type="url" id="art-github" class="filter-input full-width" value="${artifacts.github}" placeholder="https://github.com/...">
+                                </div>
+                                <div class="input-group">
+                                    <label class="label">Live Deployment Link</label>
+                                    <input type="url" id="art-deployed" class="filter-input full-width" value="${artifacts.deployed}" placeholder="https://project.vercel.app">
+                                </div>
+                                <button id="save-artifacts" class="btn btn-secondary btn-sm" style="margin-top: 8px;">Save Artifacts</button>
+                            </div>
+
+                            <div style="margin-top: var(--space-4); display: flex; gap: var(--space-2);">
+                                <button id="copy-submission" class="btn btn-primary btn-sm" ${!isShipped ? 'disabled style="opacity: 0.5; cursor: not-allowed;"' : ''}>Copy Final Submission</button>
+                            </div>
+
+                            ${isShipped ? `
+                                <div class="completion-banner">
+                                    Project 1 Shipped Successfully.
+                                </div>
+                            ` : ''}
+                        </div>
+                    </section>
+                </div>
+            </div>
+        `;
+
+        document.getElementById('save-artifacts').onclick = () => {
+            const l = document.getElementById('art-lovable').value;
+            const g = document.getElementById('art-github').value;
+            const d = document.getElementById('art-deployed').value;
+
+            const isValid = (url) => {
+                try { new URL(url); return true; } catch { return false; }
+            };
+
+            if (l && !isValid(l)) return alert('Invalid Lovable URL');
+            if (g && !isValid(g)) return alert('Invalid GitHub URL');
+            if (d && !isValid(d)) return alert('Invalid Deployment URL');
+
+            artifacts = { lovable: l, github: g, deployed: d };
+            localStorage.setItem('jobTrackerArtifacts', JSON.stringify(artifacts));
+            showToast('Artifacts saved.');
+            renderProof();
+        };
+
+        document.getElementById('copy-submission').onclick = () => {
+            const text = `Job Notification Tracker — Final Submission\n\nLovable Project:\n${artifacts.lovable}\n\nGitHub Repository:\n${artifacts.github}\n\nLive Deployment:\n${artifacts.deployed}\n\nCore Features:\n- Intelligent match scoring\n- Daily digest simulation\n- Status tracking\n- Test checklist enforced`;
+            navigator.clipboard.writeText(text).then(() => {
+                showToast('Submission copied to clipboard!');
+            });
+        };
+    }
+
     function renderTestChecklist() {
         const mainContent = document.getElementById('main-content');
         if (!mainContent) return;
