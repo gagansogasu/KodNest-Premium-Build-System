@@ -371,6 +371,52 @@ textarea:focus {
     position: relative;
 }
 
+/* HERO SECTION (Landing) */
+.hero-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: var(--space-5) var(--space-3);
+    min-height: 60vh;
+}
+
+.hero-section h1 {
+    font-size: 64px;
+    margin-bottom: var(--space-2);
+}
+
+/* FORM GRID */
+.form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-3);
+}
+
+@media (max-width: 600px) {
+    .form-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* EMPTY STATE */
+.empty-state {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: var(--space-5) 0;
+    text-align: center;
+    color: var(--text-secondary);
+}
+
+.empty-state-icon {
+    font-size: 48px;
+    margin-bottom: var(--space-3);
+    opacity: 0.2;
+}
+
 /* Utilities */
 .muted {
     color: var(--text-secondary);
@@ -382,4 +428,13 @@ textarea:focus {
 
 .warning {
     color: var(--warning-color);
+}
+
+/* UTILS */
+.full-width {
+    width: 100%;
+}
+
+.centered {
+    margin: 0 auto;
 }

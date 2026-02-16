@@ -35,89 +35,20 @@
 
         <!-- CONTEXT HEADER -->
         <section class="context-header">
-            <h1 id="page-title">Initialize System Architecture</h1>
-            <p class="subtext">Define the foundational structure of your build system. This step ensures coherence
-                across all future modules.</p>
+            <h1 id="page-title">Initialize System</h1>
+            <p class="subtext">Welcome to your premium build environment.</p>
         </section>
 
-        <!-- WORKSPACE -->
-        <main class="workspace-wrapper">
-            <!-- PRIMARY WORKSPACE -->
-            <section class="primary-workspace">
-                <div class="card">
-                    <h3>Core Module Configuration</h3>
-                    <p>Select the standard components you wish to include in your initial build. These can be extended
-                        later.</p>
-
-                    <div class="input-group">
-                        <label class="label">Module Name</label>
-                        <input type="text" placeholder="e.g. Authentication Service">
-                    </div>
-
-                    <div class="input-group">
-                        <label class="label">Priority Level</label>
-                        <div style="display: flex; gap: var(--space-2);">
-                            <label class="checklist-item"><input type="radio" name="priority" checked> High</label>
-                            <label class="checklist-item"><input type="radio" name="priority"> Medium</label>
-                            <label class="checklist-item"><input type="radio" name="priority"> Low</label>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <h3>Project Metadata</h3>
-                    <div class="input-group">
-                        <label class="label">Purpose Description</label>
-                        <textarea rows="4" placeholder="Briefly describe the business logic..."></textarea>
-                    </div>
-                </div>
-
-                <div style="display: flex; gap: var(--space-2); margin-top: var(--space-3);">
-                    <button class="btn btn-primary">Save Configuration</button>
-                    <button class="btn btn-secondary">Discard Changes</button>
-                </div>
-            </section>
-
-            <!-- SECONDARY PANEL -->
-            <aside class="secondary-panel">
-                <div class="step-explanation">
-                    <h4>Current Task</h4>
-                    <p class="muted" style="font-size: 14px; margin-bottom: var(--space-2);">Review the architecture
-                        details and copy the generated prompt to initiate the build process in your preferred
-                        environment.</p>
-                </div>
-
-                <div class="prompt-box">
-                    <p style="margin-bottom: 0;">system-init --config premium --path ./build</p>
-                </div>
-
-                <div style="display: flex; flex-direction: column; gap: var(--space-1);">
-                    <button class="btn btn-secondary" style="width: 100%;">Copy Prompt</button>
-                    <button class="btn btn-primary" style="width: 100%;">Build in Lovable</button>
-                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-1);">
-                        <button class="btn btn-secondary">It Worked</button>
-                        <button class="btn btn-secondary">Error</button>
-                    </div>
-                    <button class="btn btn-secondary" style="width: 100%; border-style: dashed;">Add Screenshot</button>
-                </div>
-            </aside>
+        <!-- DYNAMIC CONTENT AREA -->
+        <main id="main-content">
+            <!-- Content injected via main.js -->
         </main>
 
         <!-- PROOF FOOTER -->
         <footer class="proof-footer">
             <div class="checklist">
-                <label class="checklist-item">
-                    <input type="checkbox" id="check-ui"> UI Built
-                </label>
-                <label class="checklist-item">
-                    <input type="checkbox" id="check-logic"> Logic Working
-                </label>
-                <label class="checklist-item">
-                    <input type="checkbox" id="check-test"> Test Passed
-                </label>
-                <label class="checklist-item">
-                    <input type="checkbox" id="check-deploy"> Deployed
-                </label>
+                <span class="checklist-item">Job Notification Tracker v1.0</span>
+                <span class="checklist-item">◈ Premium Build</span>
             </div>
         </footer>
     </div>
