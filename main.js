@@ -9,6 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let preferences = JSON.parse(localStorage.getItem('jobTrackerPreferences') || 'null');
     let jobStatuses = JSON.parse(localStorage.getItem('jobTrackerStatus') || '{}');
     let statusUpdates = JSON.parse(localStorage.getItem('jobTrackerUpdates') || '[]');
+    let testChecklist = JSON.parse(localStorage.getItem('jobTrackerTestChecklist') || '{}');
     let showOnlyMatches = false;
 
     async function fetchJobs() {
@@ -661,6 +662,37 @@ document.addEventListener('DOMContentLoaded', () => {
                     document.getElementById('gen-digest-btn').onclick = generateDigest;
                 }
             }
+        } else if (hash === '#jt/07-test') {
+            contextHeader.innerHTML = `
+                <h1 id="page-title">Quality Assurance</h1>
+                <p class="subtext">Verify system integrity before final deployment.</p>
+            `;
+            renderTestChecklist();
+        } else if (hash === '#jt/08-ship') {
+            contextHeader.innerHTML = `
+                <h1 id="page-title">Final Deployment</h1>
+                <p class="subtext">Ship your professional job notification tracker.</p>
+            `;
+            const passedCount = Object.values(testChecklist).filter(v => v === true).length;
+            if (passedCount < 10) {
+                mainContent.innerHTML = `
+                    <div class="lock-screen">
+                        <div class="lock-icon">🔒</div>
+                        <h3>Deployment Locked</h3>
+                        <p class="muted">You must pass all 10 system tests before shipping.</p>
+                        <a href="#jt/07-test" class="btn btn-secondary" style="margin-top: var(--space-3);">Return to QA</a>
+                    </div>
+                `;
+            } else {
+                mainContent.innerHTML = `
+                    <div class="lock-screen">
+                        <div class="lock-icon" style="color: var(--success-color); opacity: 1;">🚀</div>
+                        <h3>Ready for Launch</h3>
+                        <p class="muted">All systems verified. Your premium build is ready for production.</p>
+                        <button class="btn btn-primary" style="margin-top: var(--space-3);" onclick="alert('System Shipped!')">Initialize Production Build</button>
+                    </div>
+                `;
+            }
         } else if (hash === '#proof') {
             contextHeader.innerHTML = `
                 <h1 id="page-title">Submission Proof</h1>
@@ -734,4 +766,68 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     });
+    function renderTestChecklist() {
+        const mainContent = document.getElementById('main-content');
+        if (!mainContent) return;
+
+        const items = [
+            { id: 'persist-prefs', label: 'Preferences persist after refresh', hint: 'Change settings, refresh, and confirm they remain.' },
+            { id: 'score-calc', label: 'Match score calculates correctly', hint: 'Verify score matches roles based on your keywords.' },
+            { id: 'match-toggle', label: '"Show only matches" toggle works', hint: 'Toggle on dashboard and confirm low scores hide.' },
+            { id: 'persist-save', label: 'Save job persists after refresh', hint: 'Save a job, refresh, and confirm it stays saved.' },
+            { id: 'apply-tab', label: 'Apply opens in new tab', hint: 'Click apply and verify a new tab opens.' },
+            { id: 'persist-status', label: 'Status update persists after refresh', hint: 'Change job status, refresh, and verify it stays.' },
+            { id: 'status-filter', label: 'Status filter works correctly', hint: 'Filter by "Applied" and confirm it works.' },
+            { id: 'digest-rank', label: 'Digest generates top 10 by score', hint: 'Verify digest items are ranked by match score.' },
+            { id: 'digest-persist', label: 'Digest persists for the day', hint: 'Generate digest, refresh, and confirm it reloads.' },
+            { id: 'console-clean', label: 'No console errors on main pages', hint: 'Open dev tools and verify no red errors.' }
+        ];
+
+        const passedCount = items.filter(i => testChecklist[i.id]).length;
+
+        mainContent.innerHTML = `
+            <div style="padding: 0 var(--space-3) var(--space-5);">
+                <div class="checklist-card">
+                    <div class="test-summary ${passedCount === 10 ? 'success' : 'warning'}">
+                        Tests Passed: ${passedCount} / 10
+                        ${passedCount < 10 ? '<p style="font-size: 13px; font-weight: 400; margin-top: 4px;">Resolve all issues before shipping.</p>' : ''}
+                    </div>
+                    
+                    <div class="checklist-body">
+                        ${items.map(item => `
+                            <div class="test-item">
+                                <input type="checkbox" id="${item.id}" ${testChecklist[item.id] ? 'checked' : ''}>
+                                <label for="${item.id}">
+                                    <span>${item.label}</span>
+                                    <span class="tooltip">${item.hint}</span>
+                                </label>
+                            </div>
+                        `).join('')}
+                    </div>
+
+                    <div style="margin-top: var(--space-4); display: flex; gap: var(--space-2);">
+                        <button id="reset-tests" class="btn btn-secondary btn-sm">Reset Test Status</button>
+                        ${passedCount === 10 ? '<a href="#jt/08-ship" class="btn btn-primary btn-sm">Proceed to Ship</a>' : ''}
+                    </div>
+                </div>
+            </div>
+        `;
+
+        items.forEach(item => {
+            document.getElementById(item.id).onchange = (e) => {
+                testChecklist[item.id] = e.target.checked;
+                localStorage.setItem('jobTrackerTestChecklist', JSON.stringify(testChecklist));
+                renderTestChecklist();
+            };
+        });
+
+        document.getElementById('reset-tests').onclick = () => {
+            if (confirm('Reset all test progress?')) {
+                testChecklist = {};
+                localStorage.setItem('jobTrackerTestChecklist', JSON.stringify({}));
+                renderTestChecklist();
+            }
+        };
+    }
+
 });
