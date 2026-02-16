@@ -1,0 +1,285 @@
+/* 
+  KodNest Premium Build System
+  Design Philosophy: Calm, Intentional, Coherent, Confident
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600&display=swap');
+
+:root {
+    /* Color System */
+    --bg-color: #F7F6F3;
+    --text-primary: #111111;
+    --text-secondary: #4A4A4A;
+    --accent-color: #8B0000;
+    --success-color: #4A6741;
+    --warning-color: #D1A15E;
+    --border-color: rgba(17, 17, 17, 0.1);
+    --white: #FFFFFF;
+
+    /* Spacing System */
+    --space-1: 8px;
+    --space-2: 16px;
+    --space-3: 24px;
+    --space-4: 40px;
+    --space-5: 64px;
+
+    /* Typography */
+    --font-heading: 'Instrument Serif', serif;
+    --font-body: 'Inter', sans-serif;
+
+    /* Transitions */
+    --transition-speed: 180ms;
+    --transition-ease: ease-in-out;
+
+    /* Constraints */
+    --max-content-width: 720px;
+    --sidebar-width: 30%;
+    --main-width: 70%;
+}
+
+/* Base Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-primary);
+    font-family: var(--font-body);
+    font-size: 16px;
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: var(--font-heading);
+    font-weight: 400;
+    line-height: 1.2;
+    letter-spacing: -0.01em;
+    margin-bottom: var(--space-2);
+}
+
+h1 {
+    font-size: 48px;
+}
+
+h2 {
+    font-size: 32px;
+}
+
+h3 {
+    font-size: 24px;
+}
+
+p {
+    max-width: var(--max-content-width);
+    margin-bottom: var(--space-2);
+}
+
+/* Global Layout Structure */
+.app-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Top Bar */
+.top-bar {
+    height: 64px;
+    background-color: var(--white);
+    border-bottom: 1px solid var(--border-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 var(--space-3);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.top-bar .project-name {
+    font-weight: 600;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+.top-bar .progress-indicator {
+    font-size: 14px;
+    color: var(--text-secondary);
+}
+
+.top-bar .status-badge {
+    padding: 4px 12px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 500;
+    background-color: var(--bg-color);
+    border: 1px solid var(--border-color);
+}
+
+/* Context Header */
+.context-header {
+    padding: var(--space-5) var(--space-3);
+    background-color: var(--bg-color);
+    border-bottom: 1px solid var(--border-color);
+}
+
+.context-header .subtext {
+    font-size: 18px;
+    color: var(--text-secondary);
+    max-width: var(--max-content-width);
+}
+
+/* Workspace Layout */
+.workspace-wrapper {
+    display: flex;
+    flex: 1;
+}
+
+.primary-workspace {
+    flex: 0 0 var(--main-width);
+    padding: var(--space-4);
+    border-right: 1px solid var(--border-color);
+}
+
+.secondary-panel {
+    flex: 0 0 var(--sidebar-width);
+    padding: var(--space-4);
+    background-color: var(--white);
+}
+
+/* Proof Footer */
+.proof-footer {
+    padding: var(--space-2) var(--space-3);
+    background-color: var(--white);
+    border-top: 1px solid var(--border-color);
+    position: sticky;
+    bottom: 0;
+}
+
+.checklist {
+    display: flex;
+    gap: var(--space-3);
+    justify-content: center;
+}
+
+.checklist-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    color: var(--text-secondary);
+}
+
+.checklist-item input[type="checkbox"] {
+    accent-color: var(--accent-color);
+}
+
+/* Components */
+
+/* Buttons */
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: var(--space-2) var(--space-3);
+    font-family: var(--font-body);
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all var(--transition-speed) var(--transition-ease);
+    border-radius: 4px;
+    border: 1px solid transparent;
+    gap: var(--space-1);
+}
+
+.btn-primary {
+    background-color: var(--accent-color);
+    color: var(--white);
+}
+
+.btn-primary:hover {
+    background-color: #6a0000;
+}
+
+.btn-secondary {
+    background-color: transparent;
+    border-color: var(--border-color);
+    color: var(--text-primary);
+}
+
+.btn-secondary:hover {
+    background-color: rgba(17, 17, 17, 0.05);
+}
+
+/* Cards */
+.card {
+    background-color: var(--white);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: var(--space-3);
+    margin-bottom: var(--space-3);
+}
+
+/* Inputs */
+.input-group {
+    margin-bottom: var(--space-3);
+}
+
+.label {
+    display: block;
+    font-size: 13px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: var(--text-secondary);
+}
+
+input[type="text"],
+textarea {
+    width: 100%;
+    padding: var(--space-2);
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    background-color: var(--white);
+    font-family: var(--font-body);
+    font-size: 16px;
+    transition: border-color var(--transition-speed);
+}
+
+input:focus,
+textarea:focus {
+    outline: none;
+    border-color: var(--text-primary);
+}
+
+/* Prompt Box */
+.prompt-box {
+    background-color: var(--bg-color);
+    border: 1px solid var(--border-color);
+    padding: var(--space-2);
+    border-radius: 6px;
+    font-family: monospace;
+    font-size: 13px;
+    margin-bottom: var(--space-2);
+    position: relative;
+}
+
+/* Utilities */
+.muted {
+    color: var(--text-secondary);
+}
+
+.success {
+    color: var(--success-color);
+}
+
+.warning {
+    color: var(--warning-color);
+}
