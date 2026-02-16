@@ -652,9 +652,63 @@ input[type="range"] {
     display: flex;
     align-items: center;
     gap: 8px;
+    padding: var(--space-3) var(--space-4);
+    border-bottom: 1px solid var(--border-color);
+    text-align: center;
+}
+
+.digest-header h2 {
+    margin-bottom: 4px;
+    font-size: 28px;
+}
+
+.digest-body {
+    padding: var(--space-3) 0;
+}
+
+.digest-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--space-2) var(--space-4);
+    border-bottom: 1px solid rgba(17, 17, 17, 0.05);
+    transition: background-color var(--transition-speed);
+}
+
+.digest-item:last-child {
+    border-bottom: none;
+}
+
+.digest-item:hover {
+    background-color: rgba(17, 17, 17, 0.02);
+}
+
+.digest-item-content h4 {
+    font-family: var(--font-body);
+    font-weight: 600;
+    margin: 0;
+    font-size: 15px;
+}
+
+.digest-item-content p {
     font-size: 13px;
     color: var(--text-secondary);
-    cursor: pointer;
+    margin: 0;
+}
+
+.digest-footer {
+    padding: var(--space-3);
+    text-align: center;
+    font-size: 12px;
+    color: var(--text-secondary);
+    border-top: 1px solid var(--border-color);
+}
+
+.digest-actions {
+    display: flex;
+    justify-content: center;
+    gap: var(--space-2);
+    margin-bottom: var(--space-4);
 }
 
 .centered {
